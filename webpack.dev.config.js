@@ -33,8 +33,10 @@ module.exports = {
         contentBase: resolve(__dirname),
         // match the output path
 
-        publicPath: '/'
+        //publicPath: '/'
         // match the output `publicPath`
+         historyApiFallback: true
+        // this is necessary for all requests to pass through a single index.html file, for the Single Page Application
     },
     module: {
         rules: [
